@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-image: url(/img/Ph6EHu\ \(1\).webp);
+}
+#pokedex{
+    margin-left: 647.5px;
+}
