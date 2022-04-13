@@ -24,7 +24,7 @@ main{
 .card{
     display: flex;
     align-items: center;
-
+    border-style: solid;
     background-color:red;
     width: 397px;
     height: 153px;
@@ -32,6 +32,7 @@ main{
 }
 
 .img{
+    border-style: solid;
     display: flex;
     align-items: center;
     height:111px ;

@@ -1,5 +1,24 @@
 'use strict'
 
+const colors = {
+	fire: '#FFB9B9',
+	grass: '#AB99B8',
+	electric: '#87C9B9',
+	water: '#DEF3FD',
+	ground: '#f4e7da',
+	rock: '#d5d5d4',
+	fairy: '#fceaff',
+	poison: '#E4CBCB',
+	bug: '#DEFDE0',
+	dragon: '#97b3e6',
+	psychic: '#FFE4A4',
+	flying: '#C0DDFC',
+	fighting: '#E6E0D4',
+	normal: '#FDDFDF'
+};
+
+const main_types = Object.keys(colors);
+    
 const pesquisarPoke = () =>{
 
     const getPokemonurl = id => `https://pokeapi.co/api/v2/pokemon/${id}`
