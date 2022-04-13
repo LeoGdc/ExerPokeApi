@@ -1,20 +1,21 @@
 'use strict'
 
 const colors = {
-	fire: '#FFB9B9',
-	grass: '#AB99B8',
-	electric: '#87C9B9',
-	water: '#DEF3FD',
-	ground: '#f4e7da',
-	rock: '#d5d5d4',
-	fairy: '#fceaff',
-	poison: '#E4CBCB',
-	bug: '#DEFDE0',
-	dragon: '#97b3e6',
-	psychic: '#FFE4A4',
-	flying: '#C0DDFC',
-	fighting: '#E6E0D4',
-	normal: '#FDDFDF'
+	fire: '#ff1100',
+	grass: '#00ff1e',
+	electric: '#f6ff00',
+	water: '#00eaff',
+	ground: '#914400',
+	rock: '#787878',
+	fairy: '#ff007b',
+	poison: '#cc00ff',
+	bug: '#afde2f',
+	dragon: '#bbc8fc',
+	psychic: '#edbbfc',
+	flying: '#cfcfcf',
+	fighting: '#787878',
+    normal: '#b0b0b0',
+    ice: '#00d0ff'
 };
 
 const main_types = Object.keys(colors);
@@ -34,7 +35,7 @@ const pesquisarPoke = () =>{
 
             const types = pokemon.types.map(typeInfo => typeInfo.type.name)
             accumulator += 
-            `<div class="card">
+            `<div class="card" style="background-color:${colors[types[0]]}">
                 <div class ="img">
                 <img class ="card-image ${types[0]}" alt="${pokemon.name}" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png" />
                 </div>
